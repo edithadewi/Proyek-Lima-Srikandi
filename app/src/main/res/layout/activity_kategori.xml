@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pilihkategori"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kategori">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <Spinner
+        android:id="@+id/kategori"
+        android:layout_width="368dp"
+        android:layout_height="24dp"
+        android:entries="Pilih Treatment"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <Spinner
+        android:id="@+id/treatment"
+        android:layout_width="368dp"
+        android:entries="Pilih Kategori"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="148dp" />
+</android.support.constraint.ConstraintLayout>

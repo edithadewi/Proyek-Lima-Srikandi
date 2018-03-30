@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "680266033451",
+    "firebase_url": "https://androidhive-6dd1e.firebaseio.com",
+    "project_id": "androidhive-6dd1e",
+    "storage_bucket": "androidhive-6dd1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680266033451:android:4136dd694d95000c",
+        "android_client_info": {
+          "package_name": "limasrikandi.editha.example.com.limasrikandi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680266033451-aa0lpkb8matm6n1865viejo0ccoq744f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "limasrikandi.editha.example.com.limasrikandi",
+            "certificate_hash": "290f9e870c9a22fc680351d024590d9cdc6bf98a"
+          }
+        },
+        {
+          "client_id": "680266033451-d07shjqhsbch6a4i1o70iv9mamchefj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "limasrikandi.editha.example.com.limasrikandi",
+            "certificate_hash": "78badd48969c0d0354eb73bbb3c28b4d52c534b8"
+          }
+        },
+        {
+          "client_id": "680266033451-0is7likpo8t327r5bbpfm9k9qofcvbsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr2qd3z1KS7nzHhhvSf2GgyKZkaUj2JFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680266033451-0is7likpo8t327r5bbpfm9k9qofcvbsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
