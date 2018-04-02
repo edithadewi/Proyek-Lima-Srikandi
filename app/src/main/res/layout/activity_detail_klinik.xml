@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="limasrikandi.editha.example.com.limasrikandi.DetailKlinik">
+<TextView
+        android:id="@+id/namaklinik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top_logo"
+        android:text="5 Srikandi (Skin Care) Bandung Telaga Bodas"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/nama_srikandi"
+        android:layout_gravity="center_horizontal"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Jalan Talaga Bodas, Lkr. Sel., Bandung, Kota Bandung, Jawa Barat 40263"/>
+
+    <TextView
+        android:id="@+id/no_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="(022) 7317753"/>
+</LinearLayout>
