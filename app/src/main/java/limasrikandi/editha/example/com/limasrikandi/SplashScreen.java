@@ -22,7 +22,6 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         //Membuat Toast Nama dan NIM
-
         new Handler().postDelayed(new Runnable() {
 
 
