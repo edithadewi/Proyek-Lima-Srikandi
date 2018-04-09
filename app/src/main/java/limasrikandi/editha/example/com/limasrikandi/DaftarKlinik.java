@@ -9,8 +9,7 @@ import java.util.LinkedList;
 
 public class DaftarKlinik extends AppCompatActivity {
 
-    private final LinkedList<String> foods = new LinkedList<>();
-    private final LinkedList<Integer> priceses = new LinkedList<>();
+    private final LinkedList<String> kliniks = new LinkedList<>();
     private final LinkedList<Integer> photos = new LinkedList<>();
     private int mCount = 0;
     
