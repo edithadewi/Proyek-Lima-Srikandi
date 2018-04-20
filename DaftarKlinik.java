@@ -22,11 +22,25 @@ public class DaftarKlinik extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar_klinik);
     }
-    public void onClickOrder(View view) {
-
+    public void clickKlinik1(View view) {
         Intent intent = new Intent(this,DetailActivity.class);
+        intent.putExtra("alamat_klinik","5 Srikandi (Skin Care) Telaga Bodas Bandung");
         intent.putExtra("no_tel","082218340189");
+        intent.putExtra("photo",R.drawable.klinik1);
         startActivity(intent);
-
+    }
+    public void clickKlinik2(View view) {
+        Intent intent = new Intent(this,DetailActivity.class);
+        intent.putExtra("alamat_klinik","5 Srikandi (Skin Care) Buah Batu Bandung");
+        intent.putExtra("no_tel","081218340110");
+        intent.putExtra("photo",R.drawable.klinik2);
+        startActivity(intent);
+    }
+    public void clickKlinik3(View view) {
+        Intent intent = new Intent(this,DetailActivity.class);
+        intent.putExtra("alamat_klinik","5 Srikandi (Skin Care) Cibiru Bandung");
+        intent.putExtra("no_tel","081318340129");
+        intent.putExtra("photo",R.drawable.klinik3);
+        startActivity(intent);
     }
 }

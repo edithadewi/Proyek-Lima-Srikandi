@@ -16,13 +16,14 @@
         android:textSize="18sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/margin_top_logo"
-        android:text="5 Srikandi (Skin Care) Bandung Telaga Bodas"/>
+        android:text="5 Srikandi (Skin Care) Bandung"/>
+
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="200sp"
-        android:layout_height="200sp"
-        android:src="@drawable/klinik1"
-        android:layout_gravity="center_horizontal"/>
+        android:id="@+id/img_klinik"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/klinikk1" />
 
     <TextView
         android:id="@+id/alamat"

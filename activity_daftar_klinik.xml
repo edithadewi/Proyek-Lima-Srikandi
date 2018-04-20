@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DaftarKlinik">
+    android:orientation="vertical"
+    tools:context="limasrikandi.editha.example.com.limasrikandi.DaftarKlinik">
 
-</android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo_toolbar" />
+            <ImageView
+                android:src="@drawable/nama_srikandi"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity=""
+            android:layout_marginTop="30dp"
+            android:text="DAFTAR KLINIK"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+        <Button
+            android:id="@+id/btn_klinik1"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:text="KLINIK 1"
+            android:layout_marginTop="10dp"
+            android:onClick="clickKlinik1"
+            android:textColor="@android:color/background_light" />
+        <Button
+            android:id="@+id/btn_klinik2"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimaryDark"
+            android:text="KLINIK 2"
+            android:layout_marginTop="50dp"
+            android:onClick="clickKlinik2"
+            android:textColor="@android:color/background_light" />
+        <Button
+            android:id="@+id/btn_klinik3"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimaryDark"
+            android:text="KLINIK 3"
+            android:layout_marginTop="50dp"
+            android:onClick="clickKlinik3"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+
+
