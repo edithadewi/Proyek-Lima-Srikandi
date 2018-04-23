@@ -19,9 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/ll_photo"
         android:orientation="vertical">
-        <!--<TextView-->
-        <!--android:id="@+id/tv_food"-->
-        <!--style="@style/food_title" />-->
+        
         <TextView
             android:id="@+id/tv_klinik"
             android:layout_width="wrap_content"
