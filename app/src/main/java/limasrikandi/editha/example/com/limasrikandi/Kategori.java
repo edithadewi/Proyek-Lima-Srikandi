@@ -18,7 +18,58 @@ public class Kategori extends Activity implements AdapterView.OnItemSelectedList
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kategori);
+        setContentView(R.layout.activity_pilihkategori);
+        
+        Spinner spin = (Spinner) findViewById(R.id.kategori_spinner);
+        if (spin != null) {
+            spin.setOnItemSelectedListener(this);  //tetapkan listener-nya
+        }
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.kategori_array, android.R.layout.simple_spinner_item);
+
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+
+        c = (Spinner) findViewById(R.id.kategori_spinner);
+
+        // Mengaplikasikan adapter ke spinner
+        if (spin != null) {
+            spin.setAdapter(adapter);
+        }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        mSpinnerLabel = adapterView.getItemAtPosition(i).toString();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
+
+    public void Pilih(View view) {
+
+        String test = c.getSelectedItem().toString();
+
+        if (test.equalsIgnoreCase("Wajah")) {
+            Toast.makeText(this, "Anda Memilih Treatment Untuk Wajah", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, Wajah.class);   //Membuat Intent untuk memulai aktivitas baru
+            startActivity(intent);
+        } else if (test.equalsIgnoreCase("Badan")) {
+            Toast.makeText(this, "Anda Memilih Treatment Untuk Badan", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, Badan.class);   //Membuat Intent untuk memulai aktivitas baru
+            startActivity(intent);
+        } else if (test.equalsIgnoreCase("Paket Wajah dan Badan")) {
+            Toast.makeText(this, "Anda Memilih Treatment Untuk Wajah dan Badan", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, BadanWajah.class);   //Membuat Intent untuk memulai aktivitas baru
+            startActivity(intent);
+        }
+    }
 
 
 
