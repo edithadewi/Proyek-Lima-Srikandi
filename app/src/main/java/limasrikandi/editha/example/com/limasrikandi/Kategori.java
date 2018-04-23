@@ -18,9 +18,8 @@ public class Kategori extends Activity implements AdapterView.OnItemSelectedList
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kategori);
-
-
+        setContentView(R.layout.activity_pilihkategori);
+        
         Spinner spin = (Spinner) findViewById(R.id.kategori_spinner);
         if (spin != null) {
             spin.setOnItemSelectedListener(this);  //tetapkan listener-nya
@@ -71,5 +70,8 @@ public class Kategori extends Activity implements AdapterView.OnItemSelectedList
             startActivity(intent);
         }
     }
+
+
+
 
 }
