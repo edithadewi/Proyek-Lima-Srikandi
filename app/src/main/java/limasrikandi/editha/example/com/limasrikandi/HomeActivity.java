@@ -7,10 +7,19 @@ import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
 
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        ImageButton btnCategory = findViewById(R.id.btnCategory);
+        btnCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeActivity.this, HomeTreatment.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void DaftarKlinik(View view) {
@@ -18,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void HomeTreatment(View view) {
+    public void gotoHomeTreatment(View view) {
         Intent intent = new Intent(HomeActivity.this, HomeTreatment.class);
         startActivity(intent);
     }
