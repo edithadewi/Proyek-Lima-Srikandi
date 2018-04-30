@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class kategori extends Activity implements AdapterView.OnItemSelectedListener {
+public class kategoriactivity extends Activity implements AdapterView.OnItemSelectedListener {
 
     private String mSpinnerLabel = "";  //mendefinisikan callback pilihan untuk spinner
     private Spinner c;
